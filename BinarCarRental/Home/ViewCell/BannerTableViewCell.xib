@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="BinarCarRental" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz2-qd-AUh">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="70"/>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.83137254900000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Fcn-6J-do5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="am9-LL-Ipb">
+                        <rect key="frame" x="16" y="0.0" width="328" height="140"/>
+                        <color key="backgroundColor" name="PrimaryDarkBlue"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sewa Mobil Berkualitas di kawasanmu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S8a-Qe-PXT">
+                        <rect key="frame" x="29" y="23" width="192" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeBG" translatesAutoresizingMaskIntoConstraints="NO" id="BoD-o6-KuO">
+                        <rect key="frame" x="166" y="78" width="178" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="IZu-ux-f7r"/>
+                            <constraint firstAttribute="width" constant="178" id="phi-A8-xlm"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mercedes Car EQC 300kW Edition - 900x598 1" translatesAutoresizingMaskIntoConstraints="NO" id="QMj-bF-M9W">
+                        <rect key="frame" x="166" y="37" width="178" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="SCb-vc-8Lt"/>
+                            <constraint firstAttribute="width" constant="178" id="Ttq-Ly-4fE"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb2-sZ-ciZ">
+                        <rect key="frame" x="28" y="93" width="89.5" height="28"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="gray">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Sewa Mobil">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="baseBackgroundColor" red="0.36078431370000003" green="0.72156862749999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="sewaMobilBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SaB-Hv-H12"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qb2-sZ-ciZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="0zQ-NJ-bPw"/>
+                    <constraint firstAttribute="trailing" secondItem="BoD-o6-KuO" secondAttribute="trailing" constant="16" id="3Gh-db-bY7"/>
+                    <constraint firstAttribute="trailing" secondItem="cz2-qd-AUh" secondAttribute="trailing" id="AxG-zQ-ISi"/>
+                    <constraint firstAttribute="trailing" secondItem="QMj-bF-M9W" secondAttribute="trailing" constant="16" id="CSe-nS-N9p"/>
+                    <constraint firstAttribute="bottom" secondItem="BoD-o6-KuO" secondAttribute="bottom" id="OIU-h2-GWA"/>
+                    <constraint firstItem="cz2-qd-AUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RAe-wL-ucE"/>
+                    <constraint firstAttribute="trailing" secondItem="am9-LL-Ipb" secondAttribute="trailing" constant="16" id="cUe-3L-ehS"/>
+                    <constraint firstAttribute="bottom" secondItem="QMj-bF-M9W" secondAttribute="bottom" id="dPs-mN-Jya"/>
+                    <constraint firstItem="am9-LL-Ipb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gtm-0N-NO7"/>
+                    <constraint firstItem="cz2-qd-AUh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qbj-ak-zLt"/>
+                    <constraint firstAttribute="bottom" secondItem="am9-LL-Ipb" secondAttribute="bottom" id="qzR-qb-fQ4"/>
+                    <constraint firstAttribute="trailing" secondItem="QMj-bF-M9W" secondAttribute="trailing" constant="16" id="sOz-kL-Nvx"/>
+                    <constraint firstItem="am9-LL-Ipb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="t4l-74-k5g"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qb2-sZ-ciZ" secondAttribute="bottom" constant="8" id="tZJ-22-Xis"/>
+                    <constraint firstItem="BoD-o6-KuO" firstAttribute="top" secondItem="S8a-Qe-PXT" secondAttribute="bottom" constant="12" id="uhM-Y1-rSl"/>
+                    <constraint firstAttribute="bottom" secondItem="QMj-bF-M9W" secondAttribute="bottom" id="xiP-zB-u50"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bannerTableView" destination="H2p-sc-9uM" id="oa2-vi-cSY"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="156.69642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HomeBG" width="178" height="61.5"/>
+        <image name="Mercedes Car EQC 300kW Edition - 900x598 1" width="359.5" height="208"/>
+        <namedColor name="PrimaryDarkBlue">
+            <color red="0.035000000149011612" green="0.10599999874830246" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
